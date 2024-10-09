@@ -44,7 +44,7 @@ export function useAuthForm(isLogin: boolean) {
 				isLogin ? "/auth/login" : "/auth/register",
 				data
 			);
-			localStorage.setItem("token", response.data.token);
+			localStorage.setItem("token", response.data.accessToken);
 			navigate("/");
 		} catch (error) {
 			console.error("Authentication error:", error);

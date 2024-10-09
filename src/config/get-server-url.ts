@@ -1,5 +1,5 @@
 export const getServerUrl = (path?: string) => {
-	return import.meta.env.VITE_NODE_ENV === 'production'
-		? import.meta.env.VITE_API_URL
-		: `http://localhost:4200${path}`
+	return process.env.NODE_ENV === 'production'
+		? `https://api.example.com${path}`
+		: `http://176.124.218.145:4200${path}`
 }
