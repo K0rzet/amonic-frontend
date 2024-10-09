@@ -34,7 +34,11 @@ class AuthService {
       data
     );
 
-    if (response.data.accessToken) saveTokenStorage(response.data.accessToken);
+    if (response.data.accessToken) {
+      console.log('Attempting to save token:', response.data.accessToken);
+      saveTokenStorage(response.data.accessToken);
+      console.log('Token saved');
+    }
 
     return response;
   }
