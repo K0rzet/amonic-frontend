@@ -9,7 +9,9 @@ export const getAccessToken = () => {
 
 export const saveTokenStorage = (accessToken: string) => {
 	Cookies.set(EnumTokens.ACCESS_TOKEN, accessToken, {
-		domain: 'localhost',
+		domain: import.meta.env.VITE_NODE_ENV === "production"
+		? '176.124.218.145'
+		: `localhost`,
 		sameSite: 'strict',
 		expires: 1,
 	})
