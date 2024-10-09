@@ -1,0 +1,48 @@
+.dashboard {
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  text-align: center;
+  color: #0066cc;
+  margin-bottom: 20px;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.section {
+  background-color: white;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+  h2 {
+    color: #0066cc;
+    margin-top: 0;
+    font-size: 1.2em;
+  }
+
+  ul {
+    padding-left: 20px;
+  }
+
+  p {
+    margin: 5px 0;
+  }
+}
+
+.flightInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}

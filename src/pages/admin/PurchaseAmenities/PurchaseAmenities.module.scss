@@ -1,0 +1,194 @@
+.purchaseAmenities {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+
+  h2 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+
+  .inputGroup {
+    display: flex;
+    margin-bottom: 20px;
+
+    input {
+      flex-grow: 1;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px 0 0 4px;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #196AA6;
+      color: white;
+      border: none;
+      border-radius: 0 4px 4px 0;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #196AA6;
+      }
+    }
+  }
+
+  .flightSelect {
+    margin-bottom: 20px;
+
+    select {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      margin-bottom: 10px;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      background-color: #196AA6;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #14598e;
+      }
+    }
+  }
+
+  .passengerInfo {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+
+    p {
+      margin: 5px 0;
+    }
+  }
+
+  .amenitiesSection {
+    margin-bottom: 30px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    h3 {
+      color: #196AA6;
+      margin-bottom: 15px;
+      font-size: 1.2rem;
+      border-bottom: 2px solid #196AA6;
+      padding-bottom: 10px;
+    }
+
+    .amenityList {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 15px;
+    }
+
+    .amenityItem {
+      display: flex;
+      align-items: center;
+      background-color: white;
+      padding: 10px 15px;
+      border-radius: 6px;
+      transition: all 0.3s ease;
+      border: 1px solid #e0e0e0;
+
+      &:hover {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transform: translateY(-2px);
+      }
+
+      input[type="checkbox"] {
+        margin-right: 10px;
+        cursor: pointer;
+      }
+
+      .amenityInfo {
+        flex-grow: 1;
+      }
+
+      .amenityName {
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+
+      .amenityPrice {
+        font-size: 0.9rem;
+        color: #666;
+      }
+
+      .alreadyPurchased {
+        font-size: 0.8rem;
+        color: #28a745;
+        margin-top: 5px;
+      }
+    }
+  }
+
+  .totals {
+    background-color: #e9ecef;
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+
+    p {
+      margin: 5px 0;
+      font-weight: bold;
+    }
+  }
+
+  .errorMessage {
+    color: #dc3545;
+    margin-bottom: 15px;
+  }
+
+  .actionButtons {
+    display: flex;
+    justify-content: space-between;
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+
+      &:first-child {
+        background-color: #196AA6;
+        color: #fff !important;
+        
+        &:hover {
+            background-color: #14598e;
+            color: #fff;
+        }
+      }
+
+      &:last-child {
+        border: 1px solid #6c757d;
+        color: black;
+
+        &:hover {
+          background-color: 2px solid #5a6268;
+        }
+      }
+
+      &:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+      }
+    }
+  }
+}
