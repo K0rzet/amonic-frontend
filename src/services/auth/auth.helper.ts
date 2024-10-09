@@ -12,7 +12,7 @@ export const saveTokenStorage = (accessToken: string) => {
 		domain: import.meta.env.VITE_NODE_ENV === "production"
 		? '176.124.218.145'
 		: `localhost`,
-		sameSite: 'strict',
+		sameSite: 'none',
 		expires: 1,
 	})
 }
