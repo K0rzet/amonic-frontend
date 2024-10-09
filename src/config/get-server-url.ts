@@ -1,5 +1,5 @@
 export const getServerUrl = (path?: string) => {
 	return process.env.NODE_ENV === 'production'
-		? `https://api.example.com${path}`
+		? process.env.API_URL
 		: `http://localhost:4200${path}`
 }
