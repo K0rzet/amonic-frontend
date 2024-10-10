@@ -59,6 +59,8 @@ class AuthService {
       }
     );
 
+    if (response.data.accessToken) saveTokenStorage(response.data.accessToken);
+
     return response.data;
   }
 
